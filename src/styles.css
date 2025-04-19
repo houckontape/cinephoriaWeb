@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+/* CSS code to style the main container and navigation bar
+  style css global commun a tout les fichiers*/
+
+:root {
+  --font-family: 'Merriweather'; /* Police d'�criture principale */
+  --primary-color: #ffde00; /* Couleur principale */
+  --secondary-color: #00dbff; /* Couleur secondaire */
+  --accent-color: #82e006; /* Couleur d'accentuation */
+  --text-color: #090909; /* Couleur du texte */
+  --background-color: #e2e8ea; /* Couleur d'arri�re-plan */
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* S'assurer que tout le document occupe 100% de la vue */
+}
+
+.main_container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
