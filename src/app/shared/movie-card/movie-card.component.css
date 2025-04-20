@@ -1,0 +1,80 @@
+/* Style des cartes */
+.card {
+  width: 100%; /* Les cartes prennent toute la largeur de leur colonne ici */
+  max-width: 300px; /* Mais ne d�passent pas 300px */
+  background: #fff; /* Fond blanc des cartes */
+  border: 1px solid #ddd; /* Bordure discr�te */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+  overflow: hidden; /* Cache les d�bordements */
+  text-align: center; /* Centre le texte */
+  position: relative;
+}
+
+/* Image du poster */
+.card img.poster {
+  width: 100%; /* L'image remplit la carte horizontalement */
+  height: 200px; /* Fixe une hauteur standard */
+  object-fit: cover; /* Recadre l'image pour qu'elle s'adapte */
+}
+
+/* Conteneur des d�tails */
+.card-details {
+  padding: 15px; /* Ajoute un peu d'espace autour du texte et des boutons */
+}
+
+/* Synopsis */
+.card-details .synopsis {
+  font-size: 14px;
+  color: #555; /* Couleur grise pour le texte */
+  margin-bottom: 15px; /* Espacement avec les boutons */
+  font-weight: 500;
+  overflow: hidden; /* Masque le texte qui d�passe */
+  text-overflow: ellipsis; /* Affiche "..." en cas de d�bordement */
+  white-space: nowrap; /* Emp�che le retour � la ligne */
+}
+
+/* Image coup de coeur */
+.card-details .heart {
+  position: absolute; /* Permet de positionner par rapport au parent (image) */
+  top: 45%; /* Distance par rapport au haut de l'image */
+  right: 2%; /* Distance par rapport au coin droit */
+  width: 50px; /* Largeur de l'ic�ne du c�ur */
+  height: 50px; /* Hauteur de l'ic�ne */
+  z-index: 2; /* Assure que l'ic�ne est au-dessus de l'image */
+  background-color: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent (optionnel, pour visibilit�) */
+  border-radius: 50%; /* Optionnel : pour un aspect circulaire derri�re l'ic�ne */
+  padding: 5px; /* Optionnel : espace entre l'image et le bord */
+}
+
+/* Boutons */
+.card-details .buttons {
+  display: flex;
+  justify-content: space-around; /* �carte uniform�ment les boutons */
+  gap: 10px; /* Espace entre les boutons */
+}
+
+/* Style des boutons */
+.card-details .buttons button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007BFF; /* Bleu pour les boutons */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.card-details .buttons button:hover {
+  background-color: #0056b3; /* Couleur plus fonc�e au survol */
+}
+
+.card-details .buttons .seance-btn {
+  background-color: #28a745; /* Vert pour le bouton s�ance */
+}
+
+.card-details .buttons .seance-btn:hover {
+  background-color: #1e7e34; /* Vert plus fonc� au survol */
+}

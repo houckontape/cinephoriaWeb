@@ -1,0 +1,19 @@
+<div class="card">
+  <!-- Image de l'affiche -->
+  <img src="{{ movie.poster }}" alt="Affiche du film" class="poster">
+
+  <!-- Détails sous l'image -->
+  <div class="card-details">
+    <h3>{{ movie.title }}</h3>
+    <p class="synopsis">{{ movie.synopsis }} </p>
+
+    <!-- Image coup de coeur (visible ou pas) -->
+    <img *ngIf="movie.weLike" src="heart.png" alt="Coup de coeur" class="heart" style="display: none;"> <!-- Initialement masqué -->
+
+    <!-- Boutons -->
+    <div class="buttons">
+      <button class="details-btn">Voir détails</button>
+      <button class="seance-btn">Séance</button>
+    </div>
+  </div>
+</div>

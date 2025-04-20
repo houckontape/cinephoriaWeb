@@ -1,0 +1,55 @@
+/* Section des statistiques */
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.stat-box {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.visites {
+  background-color: #3498db;
+}
+
+.films {
+  background-color: #2ecc71;
+}
+
+.incidents {
+  background-color: #e74c3c;
+}
+
+.stat-box h2 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+}
+
+.stat-box p {
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+/* Section graphique */
+.chart-container {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.chart-container canvas {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  margin: 0 auto;
+}

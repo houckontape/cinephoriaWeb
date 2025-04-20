@@ -1,0 +1,11 @@
+/* Conteneur principal des films */
+.last-films {
+  display: grid; /* Disposition en grille */
+  grid-template-columns: repeat(4, minmax(250px, 1fr)); /* Ajuste automatiquement les colonnes */
+  gap: 20px; /* Espace entre chaque carte */
+  padding: 20px; /* Marges internes au conteneur */
+  justify-items: center; /* Centre les cartes horizontalement dans le conteneur */
+  background-color: #f9f9f9; /* Fond clair */
+  border-radius: 10px; /* Coins arrondis du conteneur */
+}
+

@@ -1,0 +1,55 @@
+
+.footer {
+  margin-top: auto; /* Permet de placer le footer en bas, quelle que soit la hauteur du contenu */
+  background-color: #333333; /* Couleur de fond sombre pour le footer */
+  color: #ffffff; /* Texte en blanc pour contraste */
+  display: flex; /* Utilisation de Flexbox pour aligner les sections horizontalement */
+  justify-content: space-between; /* Espacement �gal entre les sections */
+  align-items: flex-start; /* Aligne les sections au d�but verticalement */
+  padding: 20px; /* Espacement interne pour rendre le footer compact */
+  gap: 15px; /* Espacement entre les blocs de sections */
+  flex-wrap: wrap; /* Permet aux sections de passer � la ligne sur petits �crans */
+  text-align: left; /* Alignement du texte � gauche */
+  font-size: 14px; /* Taille de texte r�duite pour un rendu compact */
+}
+
+/* Classes pour les sections */
+.footer-section {
+  flex: 1; /* Chaque section occupe une largeur �gale */
+  min-width: 250px; /* Largeur minimale pour �viter un �crasement */
+  margin: 0 10px; /* Espacement horizontal entre les sections */
+}
+
+/* Liens dans le footer */
+.footer a {
+  color: #00dbff; /* Lien bleu clair pour contraste */
+  text-decoration: none; /* Supprimer le soulignement */
+  transition: color 0.3s ease; /* Transition douce sur la couleur */
+}
+
+.footer a:hover {
+  color: #82e006; /* Changement de couleur quand on survole */
+}
+
+/* Liste pour les r�seaux sociaux */
+.social-media {
+  list-style: none; /* Supprime les puces */
+  padding: 0;
+  margin: 0;
+}
+
+.social-media li {
+  margin-bottom: 5px; /* Ajout d'un petit espace entre chaque �l�ment de la liste */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Empile les sections verticalement sur petits �crans */
+    gap: 20px; /* Plus d'espace entre les sections */
+  }
+
+  .footer-section {
+    text-align: center; /* Centrer le texte pour une meilleure lisibilit� */
+  }
+}
