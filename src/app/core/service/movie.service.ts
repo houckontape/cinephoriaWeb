@@ -7,13 +7,13 @@ import {Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class MovieService {
-  readonly apiUrl = 'http://cinephoria.tuxfarm.ovh/';
+  readonly apiUrl = 'https://cinephoria.tuxfarm.ovh/';
   private http=inject(HttpClient);
 
 
   constructor() { }
 
   getAllMovies(): Observable<Movie[]> {
-    return this.http.get<Movie[]>(this.apiUrl + 'movies');
+    return this.http.get<Movie[]>(this.apiUrl + 'movie');
   }
 }

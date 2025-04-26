@@ -1,0 +1,25 @@
+<p>manage-movie works!</p>
+<button (click)="ajouterFilm()">Ajouter un film</button>
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Nom</th>
+    <th>Salle</th>
+    <th>Cinéma</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let film of movieList">
+    <td>{{ film.id }}</td>
+    <td>{{ film.title }}</td>
+    <td> odeon </td>
+    <td> cineclub Terrats </td>
+    <td>
+      <button (click)="modifierFilm(film.id)">Modifier</button>
+      <button (click)="supprimerFilm(film.id)">Supprimer</button>
+    </td>
+  </tr>
+  </tbody>
+</table>

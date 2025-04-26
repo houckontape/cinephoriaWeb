@@ -42,10 +42,10 @@ export class StatisticComponent implements AfterViewInit{
   }
 
 // Pour détruire le graphique lorsque le composant est détruit (important pour éviter les fuites de mémoire)
-ngOnDestroy(): void {
-  if (this.chart) {
-  this.chart.destroy();
-}
-}
+  ngOnDestroy(): void {
+      if (this.chart) {
+      this.chart.destroy();
+    }
+  }
 
 }
