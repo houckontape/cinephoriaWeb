@@ -1,0 +1,19 @@
+.addmovie{
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+form{
+  margin: 2px;
+  display: flex;
+  align-items: last baseline;
+  flex-direction: column;
+}
+
+form div{
+  margin: 5px 0;
+  font-size: 1.2em;
+}
+
+
+

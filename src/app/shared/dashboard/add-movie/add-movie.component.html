@@ -1,0 +1,41 @@
+<div class="addmovie">
+  <form [formGroup]="movieForm">
+    <div>
+      <label>Title </label>
+      <input type="text" formControlName="title">
+    </div>
+    <div>
+      <label>Synopsis </label>
+      <input type="text" formControlName="synopsis">
+    </div>
+    <div>
+      <label>Poster </label>
+      <input type="text" formControlName="poster">
+    </div>
+    <div>
+      <label>Trailer </label>
+      <input type="text" formControlName="trailer">
+    </div>
+    <div>
+      <label>Release Date </label>
+      <input type="date" formControlName="releaseDate">
+    </div>
+    <div>
+      <label>Note </label>
+      <input type="text" formControlName="note">
+    </div>
+    <div>
+      <label>We Like </label>
+      <input type="text" formControlName="weLike">
+    </div>
+    <div>
+      <label>Duration </label>
+      <input type="text" formControlName="duration">
+    </div>
+    <div>
+      <label>GenreId </label>
+      <input type="text" formControlName="genreId">
+    </div>
+    <button type="submit" (click)="onSubmit()">Ajouter</button>
+  </form>
+</div>

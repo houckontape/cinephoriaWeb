@@ -2,10 +2,12 @@ import {Component, inject, OnInit} from '@angular/core';
 import {NgForOf} from '@angular/common';
 import {Movie} from '../../../core/model/movie';
 import {MovieService} from '../../../core/service/movie.service';
+import {AddMovieComponent} from '../add-movie/add-movie.component';
 @Component({
   selector: 'app-manage-movie',
   imports: [
-    NgForOf
+    NgForOf,
+    AddMovieComponent
   ],
   templateUrl: './manage-movie.component.html',
   styleUrl: './manage-movie.component.css'
