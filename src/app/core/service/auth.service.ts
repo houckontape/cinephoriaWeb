@@ -34,6 +34,7 @@ export class AuthService {
           auth.isAuth=true;
           this.isAuthenticated=true;
           this.role=auth.role;
+          sessionStorage.setItem('apiKey', auth.apiKey);
           console.log('api : ',auth);
         }else{
           auth.isAuth=false;
@@ -42,6 +43,10 @@ export class AuthService {
 
       }
     );
+  }
+
+  getAPiKey(){
+    return this.auth?.apiKey;
   }
 
 
